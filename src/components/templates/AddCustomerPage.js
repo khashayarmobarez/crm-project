@@ -19,7 +19,7 @@ function AddCustomerPage() {
     })
     
     const saveHandler = async () => {
-        const res = await fetch('/api/customer', {
+        const res = await fetch('/api/Customer', {
             method: "POST",
             body: JSON.stringify({data: form}),
             headers: { "Content-Type": "application/json"}
