@@ -7,8 +7,6 @@ import HomePage from "@/components/templates/HomePage";
 // ssr page
 export default function Index({ customers}) {
 
-  console.log(customers);
-
   return (
     <HomePage customers={customers} />
   );
