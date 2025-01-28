@@ -32,6 +32,8 @@ export default async function handler(req, res) {
         }
     }
 
+
+    // failed status
     if(req.method !== 'EDIT') {
         return res.status(405).json({status: 'failed', message: 'Method not allowed'})
     }
